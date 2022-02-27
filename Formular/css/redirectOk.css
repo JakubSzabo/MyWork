@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+h1{
+    font-size: 3em;
+    color: gray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+    padding: 0.3em;
+}
+
+a:hover{
+    color: gray;
+}

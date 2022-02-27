@@ -1,0 +1,57 @@
+@media only screen and (max-width:768px){
+    h2{
+        text-align: center;
+    }
+
+    .userInfo{
+        display: grid;
+        grid: auto / 1fr;
+        text-align: center;
+    }    
+
+    .komponenty{
+        max-width: 250px;
+        display: block;
+        margin: auto;
+    }   
+    
+    .komponenty select{
+        display: block;
+    }
+
+    .graf,
+    .other{
+        max-width: 250px;
+    display: block;
+    margin: auto;
+    }
+    
+}
+
+@media only screen and (max-width:365px){
+    .userInfo input{
+        width: 100%;
+    }
+
+    .komponenty select{
+        width: 100%;
+    }
+
+    h1{
+        font-size: 2em;
+    }
+
+    h2{
+        font-size: 1.3em;
+    }
+
+    #textAreaIne,
+    #textAreaCheckBox,
+    .graf label,
+    .other label,
+    .komponenty select,
+    .userInfo input,
+    .userInfo label{
+        font-size: 1em;
+    }
+}

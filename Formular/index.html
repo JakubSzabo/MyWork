@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Zadanie</title>
+</head>
+
+<body>
+    <div class="container">
+        <form class="formular" 	action="https://iolab.sk/form2mail/form2mail.php" method="post" enctype="multipart/form-data">
+            <h1>Objednaj si svoj počítač namieru</h1>
+            <input type="hidden" name="apikey" value="c54aa0e89c58e269c9631f8adf6cfb6f">
+            <input type="hidden" name="from" value="xszaboj1@stuba.sk">
+            <input type="hidden" name="to" value="jakub160@gmail.com">
+            <input type="hidden" name="subject" value="Zadanie3 Jakub Szabo">
+            <input type="hidden" name="redirectOk" value="https://webte1.fei.stuba.sk/~xszaboj1/&&cv3$$/redirectOk.html">
+            <input type="hidden" name="redirectFalse" value>
+
+            <h2>Informácie o zákazníkovi</h2>
+            <div class="userInfo">
+                <div>
+                    <label for="fname">Meno: *</label><br>
+                    <input  required type="text" id="fname" name="fname" placeholder="Meno" pattern="\D+" onchange="fNameVerifi()"><br>
+                </div>
+
+                <div>
+                    <label for="lname">Priezvisko: *</label><br>
+                    <input required type="text" id="lname" name="lname" placeholder="Priezvisko" pattern="\D+" onchange="lNameVerifi()"><br>
+                </div>
+
+                <div>
+                    <label for="age">Vek: *</label><br>
+                    <input required type="number" id="age" name="age" placeholder="21" onchange="ageVerification()"><br>
+                    <label id="errorReport" for="age">Vek a dátum narodenia sa nezhodujú.</label><br>
+                </div>
+
+                <div>
+                    <label for="bDate">Dátum narodenia: *</label><br>
+                    <input required type="date" id="bDate" name="bDate" onchange="ageVerification()"><br>
+                </div>
+
+                <div>
+                    <label for="email">Email: *</label><br>
+                    <input required type="email" id="email" name="email" placeholder="name@example.com" pattern="^(\w{3,})[@]((\w{1,}.){1,})([.]\w{2,4}$)" onchange="emailVerifi()"><br>
+                </div>
+
+                <div>
+                    <label for="phoneNumber">Telefónne čislo:</label><br>
+                    <input type="text" id="phoneNumber" name="phoneNumber" placeholder="09********" pattern="\d{10}" onchange="numberVerifi()"><br>
+                </div>
+            </div>
+
+            <h2>Vyber si svoje komponenty</h2>
+            <div class="komponenty">
+                <select name="cpu" id="cpu">
+                    <option id="intelJs" selected value="Intel">Intel</option>
+                    <option id="amdJs" value="AMD">AMD</option>
+                </select>
+
+                <select name="type" class="intelAmdJs" id="Intel">
+                    <option selected value="I7">I7</option>
+                    <option value="I9">I9</option>
+                </select>
+
+                <select name="type" class="intelAmdJs" id="AMD">
+                    <option selected value="R7">Ryzen 7</option>
+                    <option value="R9">Ryzen 9</option>
+                </select>
+
+                <select name="model" class="IxJs RxJs" id="I7">
+                    <option value="9700K-312,90">9700K&nbsp;-&nbsp;312,90€</option>
+                    <option value="10700K-362,90">10700K&nbsp;-&nbsp;362,90€</option>
+                </select>
+
+                <select name="model" class="IxJs RxJs" id="I9">
+                    <option value="9900KF-334,90">9900KF&nbsp;-&nbsp;334,90€</option>
+                    <option value="10900KF-448,90">10900KF&nbsp;-&nbsp;448,90€</option>
+                </select>
+
+                <select name="model" class="IxJs RxJs" id="R7">
+                    <option value="3800X-300,90">3800X&nbsp;-&nbsp;300,90€</option>
+                    <option value="5700G-335,90">5700G&nbsp;-&nbsp;335,90€</option>
+                </select>
+
+                <select name="model" class="IxJs RxJs" id="R9">
+                    <option value="5900X-530,90">5900X&nbsp;-&nbsp;530,90€</option>
+                    <option value="5950X-796,90">5950X&nbsp;-&nbsp;796,90€</option>
+                </select>
+            </div>
+
+            <h2>Grafická karta</h2>
+            <div class="graf">
+                <div>
+                    <input value="MSI GeForce RTX 3060 Ti" name="grafika" id="grafika1" type="radio">
+                    <label for="grafika1">MSI GeForce RTX 3060 Ti</label>
+                </div>
+
+                <div>
+                    <input value="MSI GeForce RTX 3070" name="grafika" id="grafika2" type="radio">
+                    <label for="grafika2">MSI GeForce RTX 3070</label>
+                </div>
+
+                <div>
+                    <input value="Iné" name="grafika" id="ine" type="radio">
+                    <label for="ine">Iné</label>
+                </div>    
+            </div>
+            <textarea name="grafika" id="textAreaIne" cols="100" rows="4"></textarea>
+
+            <h2>Ine príslušenstvo</h2>
+            <div class="other">
+                <div>
+                    <input id="mys" type="checkbox" name="ine" value="myš">
+                    <label for="mys">Myš</label>
+                </div>
+
+                <div>
+                    <input id="klavesnica" type="checkbox" name="ine" value="klavesnica">
+                    <label for="klavesnica">Klavesnica</label>
+                </div>
+
+                <div>
+                    <input id="chceckBoxOther" type="checkbox" name="ine" onclick="checkbox()" value>
+                    <label for="chceckBoxOther">Iné</label>
+                </div>
+                
+            </div>
+            <textarea name="ine" id="textAreaCheckBox" cols="100" rows="4"></textarea>
+
+            <input id="submit" type="submit" value="Odoslať">
+        </form>
+    </div>
+
+    <script src="js/select.js"></script>
+    <script src="js/ageVerification.js"></script>
+    <script src="js/otherTextArea.js"></script>
+    <script src="js/VerificationPattern.js"></script>
+</body>
+
+</html>
