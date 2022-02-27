@@ -1,0 +1,172 @@
+@media only screen and (max-width: 1200px){
+    .eshop .container{
+        width: 900px;
+    }
+}
+
+@media only screen and (max-width:1050px){
+    .barbers ul li{
+        width: 50%;
+    }
+
+    .services .services-img{
+        float: unset;
+        width: unset;
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .services .services-img img:first-of-type{
+    display: none;
+    }
+    .services .services-img img:last-of-type{
+        display: inline-block;
+
+        width: 100%;
+        height: auto;
+    }
+
+    .services .services-text{
+        float: unset;
+        width: unset;
+
+        padding-left: unset;
+        padding: 0 10px;
+        
+        max-width: 500px;
+        margin: auto;
+
+        text-align: center;
+    }
+
+    .services .service-price{
+        float: unset;
+        padding: unset;
+
+        padding: 0 10px;
+
+        padding-top: 30px;
+        min-width: 500px;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .header .text{
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .eshop .container{
+        width: 600px;
+    }
+
+    .eshop .vypln{
+        height: 4.5em;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    #menuJs{
+        display: block;
+    }
+
+    .menu-bar-basket{
+        width: 100%;
+    }
+
+    #basket{
+        padding-top: 0.1em;
+    }
+
+    .navigation ul,
+    .header .nav ul{
+        display: none; 
+        float: unset;
+    }
+
+    .navigation ul li,
+    .header .nav ul li{
+        display: block;
+       
+        padding-top: 0.7em;
+    }
+
+    .gallery-index .gallery img{
+        width: 50%;
+        opacity: 1;
+    }
+
+    #overlay img{
+        width: unset;
+        height: unset;
+
+        width: 90%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .kontakty .map,
+    .kontakty .info{
+        width: 100%;
+    }
+
+    .kontakty .map iframe{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .header .text h1{
+        font-size: 2.5em;
+    }
+    .header .text p{
+        font-size: 1.3em;
+    }
+
+    .eshop .container{
+        width: 300px;
+    }
+
+}
+
+@media only screen and (max-width:550px){
+    .pre-header{
+        display: none;
+    }
+
+    .barbers ul li{
+        width: 100%;
+    }
+
+    .services .services-text h2{
+        font-size: 2.7em;
+    }
+
+    .services .service-price{
+        min-width: unset;
+        margin: unset;
+
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:450px){
+    .gallery-index .gallery img{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:310px){
+    .services .services-text h2{
+        font-size: 2em;
+    }
+    .services .services-text .text{
+        font-size: 1.3em;
+    }
+    .services .service-price ul li p{
+        font-size: 0.9em;
+    }
+}

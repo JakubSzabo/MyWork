@@ -1,0 +1,23 @@
+[
+    {
+        "id": "1",
+        "nazov": "Fest tricko",
+        "cena": "15",
+        "src": "pictures/eshop/anomaly-WWesmHEgXDs-unsplash.jpg",
+        "alt": "triko fest"
+    },
+    {
+        "id": "2",
+        "nazov": " Tricko fest",
+        "cena": "16",
+        "src": "pictures/eshop/anomaly-WWesmHEgXDs-unsplash.jpg",
+        "alt": "triko fest"
+    },
+    {
+        "id": "3",
+        "nazov": " Tricko idk",
+        "cena": "20",
+        "src": "pictures/eshop/anomaly-WWesmHEgXDs-unsplash.jpg",
+        "alt": "triko fest"
+    }
+]

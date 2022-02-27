@@ -1,0 +1,851 @@
+/*** Základ ***/
+*{
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+    
+    font-size: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.f-l{
+    float: left;
+}
+
+.f-r{
+    float: right;
+}
+
+.fix{
+    position: fixed;
+}
+
+#active{
+    color: rgb(218,165,32);
+}
+
+/********************
+gold: rgb(218,165,32)
+menu: rgba(36, 36, 36, 0.4)
+font-family: "Barlow Condensed",Arial,sans-serif;
+-webkit-text-fill-color: transparent;
+-webkit-text-stroke-width: 2px;
+-webkit-text-troke-color: rgb(53, 53, 53);
+*********************/
+
+/**Index **/
+/* Header */
+.pre-header{
+    background-color: rgb(14, 14, 14);
+
+    height: 2.5em;
+    width: 100%;
+}
+
+.pre-header ul li{
+    display: inline-block;
+}
+
+.pre-header ul li a{
+    display: inline-block;
+
+    padding: 0.3em 0.5em 0 0.5em;
+
+    font-size: 1.3em;
+    color: #fff;
+    text-decoration: none;
+}.pre-header ul li a:hover{color: rgb(218,165,32)}
+
+.pre-header ul li:first-child a i{
+    padding-right: 0.5em;
+}
+
+.header{
+    background-image: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6810925053615196) 0%, rgba(255,255,255,0.08) 0%, rgba(0,0,0,0.6110644941570378) 19%),url(../pictures/bacgraund-header.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 800px;
+}
+
+.header .nav{
+    z-index: 5000;
+    
+    text-align: right;
+
+    background-color: rgba(36, 36, 36, 0.4);
+    border-top: 2px solid rgba(218, 165, 32, 0.4);
+    border-bottom: 2px solid rgba(218, 165, 32, 0.4);
+
+    padding: 0.5em 0;
+
+    width: 100%;
+
+    position: relative;
+    top: 50px;
+}
+
+#logo{
+    padding-left: 0.4em;
+    font-size: 1.7em;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+#menuJs{
+    display: none;
+}
+
+.header .nav ul{
+    list-style: none;
+    
+} 
+
+.header .nav ul li{
+    display: inline-block;
+}
+
+#menuJs,
+.header .nav ul li a{ 
+    text-decoration: none;
+    
+    color: #fff;
+    font-size: 1.7em;
+    font-weight: 700;
+
+    padding-right: 0.4em;
+}#menuJs:hover,.header .nav ul li a:hover{color: rgb(218,165,32)}
+
+.header .text{
+    max-width: 464px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+}
+
+.header .text h1{
+    width: 100%;
+
+    color: #fff;
+
+    font-size: 3em;
+
+    font-family: "Barlow Condensed",Arial,sans-serif;
+}
+
+.header .text h1 span{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+}
+
+.header .text p{
+    color: white;
+    font-size: 1.5em;
+    padding-top: 0.5em;
+    padding-left: 3em;
+    border-left: 2px solid rgb(218,165,32);
+}
+
+#objednaj-sa{
+    display: inline-block;
+
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+
+    width: 100%;
+
+    font-size: 1.2em;
+
+    padding: 0.5em 0;
+    margin-top: 1em;
+
+    background-color: rgb(161, 127, 40);
+    transition: 0.2s;
+
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+}#objednaj-sa:hover{background-color: rgb(204, 159, 46);}
+
+/* Main */
+.barbers ul{
+    width: 100%;
+}
+
+.barbers ul li{
+    list-style: none;
+
+    color: rgb(0, 0, 0);
+
+    float: left;
+    width: 25%;
+
+    background-image: url(../pictures/barber.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border: 2px solid black;
+ }
+ /* .barbers ul li:nth-child(2),
+.barbers ul li:nth-child(4){
+    background-image: url(../pictures/barber2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+.barbers ul li .image{
+    padding: 15px 0;
+    max-width: 200px;
+    margin: auto;
+}
+
+.barbers ul li .image img{
+    width: 100%;
+
+    border-radius: 50%;
+}
+
+.barbers ul li h2{
+    margin: auto;
+    width: 95%;
+
+    font-size: 2.3em;
+    text-align: center;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.barbers ul li p{
+    margin: auto;
+    width: 95%;
+    padding: 10px 0;
+
+    text-align: center;
+    font-size: 1.3em;
+
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.barbers ul li .social-network{
+    font-size: 1.5em;
+    text-align: center;
+    
+    padding: 0.5em;
+}
+
+.barbers ul li .social-network i{
+    color: rgb(0, 0, 0);
+    padding: 0 0.2em;
+}.barbers ul li .social-network i:hover{color: #000;}
+
+.services{
+    background-color: #fff;
+}
+
+.services .services-img{
+    width: 40%;
+    height: auto;
+}
+
+.services .services-img img{
+    width: 100%;
+    height: auto;
+}
+.services .services-img img:last-of-type{
+    display: none;
+}
+
+.services .services-text{
+    width: 60%;
+    padding: 40px 0px 0px 55px;
+}
+
+.services .services-text h2{
+    font-size: 3em;
+    color: #000;
+    font-family: "Barlow Condensed",Arial,sans-serif;
+
+    border-bottom: 2px solid rgb(218,165,32);
+
+    width: 100%;
+}
+
+.services .services-text h2 span{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-troke-color: rgb(53, 53, 53);
+}
+
+.services .services-text .text{
+    padding-top: 20px;
+
+    font-size: 1.5em;
+    color:rgb(66, 66, 66);
+}
+
+.services .service-price{
+    width: 60%;
+    float: left;
+
+    padding: 20px 0px 0px 55px;
+}
+
+.services .service-price ul li{
+    list-style: none;
+
+    position: relative;
+
+    padding-top: 10px;
+
+    font-size: 1.5em;
+    font-weight: 600;
+    font-family: "Barlow Condensed",Arial,sans-serif;
+}
+.services .service-price ul li:nth-child(1),
+.service-price ul li:nth-child(2){
+    padding-bottom: 10px;
+}
+
+.services .service-price ul li img{
+    width: 50px;
+    height: auto;
+}
+
+.services .service-price ul li p{
+    display: inline-block;
+
+    padding-left: 30px;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.services .service-price ul .reservation{
+    padding-bottom: 1.5px;
+    width: 20px;
+    border-bottom: 2px solid rgb(218,165,32);
+    transition: 500ms;
+}.services .service-price ul .reservation:hover{
+    width: 250px;
+}
+
+.services .service-price ul .reservation a{
+    display: inline-block;
+
+    text-decoration: none;
+    color: #000;
+
+    padding: 0.3em;
+
+    width: 250px;
+    height: 2em;
+
+    -webkit-clip-path: polygon(0 0, 75% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 75% 0, 100% 100%, 0% 100%);
+    background-color: rgb(218,165,32);
+}
+
+.services .service-price ul .reservation a i{
+    padding-left: 15px;
+}
+
+.gallery-index h2{
+    display: block;
+    
+    font-family: "Barlow Condensed",Arial,sans-serif;
+    font-weight: 700;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-troke-color: rgb(37, 37, 37);
+
+    padding-top: 1.5em;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid rgb(218,165,32);
+    margin-bottom: 0.5em;
+
+    text-align: center;
+    font-size: 3em;
+}
+
+.gallery-index .gallery img{
+    width: 33.333333%;
+    float: left;
+
+    opacity: 0.8;
+
+    transition: 0.5s;
+}.gallery-index .gallery img:hover{opacity: 1;}
+
+#overlay{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#overlay img{
+    position: relative;
+    top: 45%;
+    left: 50%;
+
+    border: 5px solid #fff;
+    border-radius: 5px;
+
+    transform: translate(-50%, -50%);
+
+    width: auto;
+    height: 70vh;
+}
+
+/* Footer */
+.kontakty{
+    background-color: #000;
+
+    width: 100%;
+}
+
+.kontakty h2{
+    font-size: 2.5em;
+    font-weight: 700;
+    
+    text-align: center;
+
+    font-family: "Barlow Condensed",Arial,sans-serif;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-troke-color: rgb(255, 255, 255);
+    
+    color: #fff;
+    
+    padding: 0.5em 0;
+}
+
+.kontakty .info{
+    color: #fff;
+    font-size: 1.5em;
+
+    width: 50%;
+}
+
+.kontakty .info ul{
+    padding-top: 2em;
+}
+
+.kontakty .info ul li{
+    width: 100%;
+
+    padding-bottom: 0.5em;
+
+    text-align: center;
+    list-style: none;
+}
+
+.kontakty .info ul  li a{
+    color: #fff;
+    text-decoration: none;
+
+    padding-bottom: 0.5em;
+}.kontakty .info ul li a:hover{color: rgb(204, 159, 46);}
+
+.kontakty .info ul li i{
+    padding-right: 0.2em;
+}
+
+.kontakty .map{
+    width: 50%;
+}
+
+.kontakty .map iframe{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.kontakty .socialne-siete{
+    width: 100%;
+    text-align: center;
+
+    margin-top: 0.5em;
+}
+
+.kontakty .socialne-siete a{
+    padding: 0.5em;
+
+    font-size: 1.5em;
+    color: #fff;
+}.kontakty .socialne-siete a:hover{color: rgb(204, 159, 46);}
+
+.kontakty .copy{
+    width: 100%;
+    
+    background-color: rgb(58, 58, 58);
+    
+    color: rgb(168, 168, 168);
+    text-align: center;
+
+    padding: 0.3em 0;
+    margin-top: 0.5em;
+}
+
+/* navigation */
+.navigation{
+    z-index: 9000;
+    background-color: #000;
+    width: 100%;
+}
+
+#basket{
+    padding-right: 0.5em;
+}
+
+.menu-bar-basket{
+    text-align: right;
+}
+
+.menu-bar-basket a{
+    display: inline-block;
+}
+
+.navigation ul{
+    text-align: right;
+    padding: 0.5em;
+}
+
+.navigation ul li{
+    display: inline-block;
+
+    list-style: none;
+
+    font-size: 1.7em;
+    font-weight: 700;
+}
+
+.navigation ul li a{
+    padding-right: 0.4em;
+
+    color: #fff;
+    text-decoration: none;  
+}.navigation ul li a:hover{color: rgb(204, 159, 46);}
+
+.navigation .bar{
+    display: block;
+
+    text-align: right;
+    font-size: 1em;
+
+    padding: 0.5em;
+}
+
+/** eshop.html **/
+/* main */
+.eshop{
+    background-image: url(../pictures/eshop2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    width: 100%;
+    float: left;
+}
+.eshop ul{
+    width: 100%;
+}
+
+.eshop ul li{
+    color: #000;
+    font-family: "Barlow Condensed",Arial,sans-serif;
+
+    list-style: none;
+
+    float: left;
+    width: 280px;
+    
+    padding: 10px;
+    margin: 10px;
+
+    transition: 0.3s;
+
+    background-color: rgb(241, 241, 241);
+    border: 1px solid #000;
+}.eshop ul li:hover{box-shadow: 5px 5px 5px rgb(43, 43, 43);}
+
+.eshop ul li .img-eshop{
+    max-width: 250px;
+    margin: auto;
+}
+
+.eshop ul li .img-eshop a img,
+.eshop ul li .img-eshop a{
+    width: 100%;
+}
+
+.eshop ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+.eshop ul li a{
+    font-size: 1.7em;
+    font-weight: 700;
+
+    text-align: center;
+
+    padding: 0.3em;
+}
+
+.eshop ul li h3{
+    text-align: center;
+    font-size: 2em;
+
+    padding: 0.3em;
+}
+.eshop h2{
+    text-align: center;
+    font-size: 2em;
+} 
+
+#vypln{
+    height: 3em;
+    width: 100%;
+}
+
+.eshop ul li .buy-btn-border .buy-btn{
+    display: inline-block;
+    transition: 0.5s;
+    width: 250px;
+    background-color: rgb(218,165,32);
+    color: #fff;
+    clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 77%, 94% 100%, 50% 100%, 0 100%, 0% 65%, 0 23%, 6% 0);
+}.eshop ul li .buy-btn-border .buy-btn:hover{background-color: rgb(189, 144, 32);}
+
+.eshop ul li .buy-btn-border{
+    transition: 1s;
+    padding-bottom: 2px;
+    border-bottom: 1px solid rgb(218,165,32);
+    width: 30px;
+}.eshop ul li .buy-btn-border:hover{width: 234px;}
+
+#basket{
+    color: #fff;
+    font-size: 1.7em;
+    position: relative;
+}
+
+#items-basket-js i{
+    padding-top: 0.3em;
+    padding-right: 0.3em;
+    color: #fff;
+}#items-basket-js i:hover{color: rgb(204, 159, 46);}
+
+#item-basket{
+
+    display: none;
+
+    color: #fff;
+    background-color: rgb(167, 34, 34);
+    border-radius: 50%;
+    width: 0.7em;
+    height: 0.7em;
+
+    position: absolute;
+    top: 6px;
+    right: 9px;
+}
+
+#item-basket p{
+    font-size: 0.5em;
+
+    text-align: center;
+    line-height: 1.4;
+}
+
+/* tattoo */
+.tattoo-main{
+    background-color: #fff;
+}
+
+#back-img-tatto{
+    width: 100%;
+    height: 250px;
+
+    background-image: url(../pictures/tatto/chang-hsien-HsQuhb9GBPM-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.tattoo .text h2{
+    color: #000;
+    padding-top: 1.5em;
+    text-align: center;
+    font-size: 3em;
+    font-weight: 700;
+    color: black;
+    font-family: "Barlow Condensed",Arial,sans-serif;
+}
+
+.tattoo .text h2 span{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-troke-color: rgb(0, 0, 0);
+}
+
+.tattoo .text p{
+    font-size: 1.7em;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 1em;
+}
+
+.tattoo .text p a{
+    color: #000;
+}.tattoo .text p a:hover{color: rgb(204, 159, 46);}
+
+.tattoo .text p a i{
+    padding: 0.5em 0;
+    cursor: pointer;
+}
+
+.tattoo .gallery {
+    width: 100%;
+    float: left;
+}
+
+
+.tattoo .gallery a{
+    width: 30.333%;
+    /* height: 250px; */
+    float: left;
+
+    margin: 1.5%;
+
+    /* object-fit: cover; */
+}
+
+.tattoo .gallery a img{
+    width: 100%;
+    height: auto;
+}
+
+/** kontakt **/
+#kontakt{
+    background-color: rgb(58, 58, 58);
+}
+
+#kontakt .kontakty .info{
+    float: unset;
+    text-align: center;
+    width: 100%;
+}
+
+#kontakt .kontakty .map{
+    width: 100%;
+    float: unset;
+    padding: 1.5em 0;
+}
+
+.back-kontakt{
+    background-image: url(../pictures/kontakt-black-icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    height: 250px;
+    width: 100%;
+}
+
+#kosik .pre-header{
+    background-color: #000;
+}
+
+h6{
+    padding: 3em 0; 
+    font-size: 4em;
+    text-align: center;
+    color: gray;
+}
+
+/***  Clearfix ***/
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#ul-kosik{
+    padding: 5em 0;
+}
+
+#li-kosik{
+    max-width: 800px;
+    margin: auto;
+    list-style: none;
+    position: relative;
+    border: 2px solid black;
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: rgb(214, 208, 208);
+}
+
+#cena-kosik{
+    display: inline-block;
+    font-size: 2.2em;
+    padding-left: 0.5em;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#nazov-kosik{
+    display: inline-block;
+    font-size: 2em;
+    padding: 0 0.5em;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#img-kosik{
+    height: 90px;
+    width: auto;
+}
+
+input{
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid black;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#minus, #plus{
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border: 2px solid black;
+    background-color: rgb(146, 145, 145);
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    padding: 5px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
