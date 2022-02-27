@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <title>Zadanie</title>
+</head>
+
+<body onload="slider()">
+    <header>
+        <h1>Zadanie</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="sin-cos">
+                <input checked id="sinus" name="sinus" type="checkbox" onchange="check()"><label for="sinus">Sinus</label>
+                <input checked id="cosinus" name="cosinus" type="checkbox" onchange="check()"><label for="cosinus">Cosinus</label>
+            </div>
+            <div id="graf"></div>
+
+            <div class="grid">
+                <div>
+                    <button id="start" onclick="start()">Start</button>
+                    <button id="end" onclick="stop()">Koniec</button>
+                </div>
+                <div>
+                    <input name="idk" id="slider" type="radio" checked onchange="input()">
+                    <label for="slider">Slider</label><br>
+                    <input name="idk" id="num" type="radio" onchange="input()">
+                    <label for="num">Číslo</label>
+                </div>
+                <div class="inputs">
+                    <in-put>zadaj cislo od 1 do 10</in-put>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="result"></div>
+
+        <script src="js/data.js"></script>
+        <script src="js/functions.js"></script>
+        <script src="js/customelement.js"></script>
+    </footer>
+</body>
+
+</html>
