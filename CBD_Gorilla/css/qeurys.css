@@ -1,0 +1,232 @@
+@media only screen and (max-width: 1435px){
+    .our_cbd h2{
+        margin-top: 50px;
+    }
+    .our_cbd{
+        margin-left: 15px;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .images_why{
+        display: block;
+        margin: auto;
+        width: 250px;
+        margin-bottom: 70px;
+        padding: auto;
+    }
+    .text_why{
+        display: block;
+        margin: auto;
+    }
+    #why_img2{
+
+        display: inline-block;
+    }
+    #why_img1{
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width: 1177px){
+    .logo_shop{
+        margin-left: 10px;
+    }
+    .logo_shop img{
+        position: static;
+    }
+    .logo_shop h1{
+        width: auto;
+        display: inline-block;
+        position: absolute;
+        top: 0.7em;
+        padding-top: 0;
+    }
+}
+
+@media only screen and (max-width: 1140px){
+    .resp{
+        display: inline-block;
+    }
+}
+
+
+
+@media only screen and (max-width: 980px){
+    .box-3{
+        float: none;
+        
+    }
+}
+
+@media only screen and (max-width: 911px){
+    .our_cbd{
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+    .buy_btn{
+        position: static;
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+    .product_img{
+        display: inline-block;
+        margin-left: 50%;
+        margin-top: 148px;
+    transform: translate(-50%, -50%);
+    }
+    .product_img img{
+       margin: auto;
+    }
+}
+
+@media only screen and (max-width: 852px){
+    .contact_info{
+        display: block;
+        float: none;
+        text-align: center;
+        margin: auto;
+        width: auto;
+    }
+
+    .other_contact{
+        float: none;
+        text-align: center;
+        margin: auto;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        width: auto;
+    }
+
+    .contact_info a{
+        font-size: 1em;
+    }
+
+    .map{
+        display: none;
+        float: none;
+    }
+
+    .map_middle{
+        display: block;
+        width: 300px;
+        height: 300px;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .header{
+        height: 150px;
+    }
+    
+    #logo-bcg{
+        height: 100px;
+    }
+
+    .fast_buy_btn{
+        top: 90px;
+        left: 10px; 
+    }
+
+    .fast_buy_btn a{
+        font-size: 2em;
+    }
+
+    nav ul li a{
+        font-size: 1.5em;
+    }
+
+    #logo{
+        height: 2.75em;
+    }
+}
+
+@media only screen and (max-width: 715px){
+    .product_box_text{
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 675px){
+    .header{
+        background-position: 0 -76px;
+    }
+}
+
+@media only screen and (max-width: 565px){
+    .box{
+        display: inline-block;
+        float: none;
+        margin: 0;
+    }
+    form{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .product_box .product_box_text{
+        float: none;
+        display: block;
+        padding-left: 10px;
+    }
+
+    .product_box img{
+        float: none;
+    }
+    
+    .pre-header{
+        height: 2.2em;
+    }
+
+    #why_img1{
+        width: 200px;
+    }
+
+    #why_img2{
+        width: 200px;
+    }
+    
+    .pre-header a{
+        font-size: 1.2em;
+    }
+
+    .images_why{
+        margin-bottom: 90px;
+    }
+}
+
+@media only screen and (max-width: 515px){
+    nav ul li a{
+        font-size: 1.2em;
+    }
+    #logo{
+        height: 1.75em;
+    }
+}
+
+@media only screen and (max-width: 471px){
+    .price{
+        display: inline-block;
+        margin-left: 50%;
+        transform: translate(-50%);
+    }
+
+    .shop_header a{
+        font-size: 1.3em;
+    }
+
+    .logo_shop h1{
+        font-size: 1.4em
+    }
+
+}
+
+@media only screen and (max-width: 400px){
+    .product_box_text {
+        width: 300px;
+    }
+}
